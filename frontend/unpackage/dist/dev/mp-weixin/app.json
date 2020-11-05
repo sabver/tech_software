@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/login/index",
+    "pages/index/index",
+    "pages/search/index",
+    "pages/detail/index",
+    "pages/my/index"
+  ],
+  "subPackages": [],
+  "window": {
+    "backgroundColor": "#ffffff",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTitleText": "Paper Search",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#353535",
+    "selectedColor": "#4a90e2",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "Home",
+        "iconPath": "static/index_change.png",
+        "selectedIconPath": "static/index.png"
+      },
+      {
+        "pagePath": "pages/my/index",
+        "text": "My",
+        "iconPath": "static/index_change.png",
+        "selectedIconPath": "static/index.png"
+      }
+    ]
+  },
+  "usingComponents": {},
+  "sitemapLocation": "sitemap25.json"
+}

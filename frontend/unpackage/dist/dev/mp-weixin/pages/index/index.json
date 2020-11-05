@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "Home",
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "loading": "/components/loading/loading",
+    "list-item": "/components/list_item/list_item"
+  }
+}

@@ -1,0 +1,61 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/login/index",
+			"style": {
+				"navigationBarTitleText": "Login"
+			}
+		},
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "Home",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/search/index",
+			"style": {
+				"navigationBarTitleText": "Search",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/detail/index",
+			"style": {
+				"navigationBarTitleText": "Detail"
+			}
+		},
+		{
+			"path": "pages/my/index",
+			"style": {
+				"navigationBarTitleText": "My"
+			}
+		}
+	],
+	"globalStyle": {
+		"backgroundColor": "#ffffff",
+		"backgroundTextStyle": "light",
+		"navigationBarBackgroundColor": "#ffffff",
+		"navigationBarTitleText": "Paper Search",
+		"navigationBarTextStyle": "black"
+	},
+	"tabBar": {
+		"color": "#353535",
+		"selectedColor": "#4a90e2",
+		"borderStyle": "black",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"text": "Home",
+				"iconPath": "static/index_change.png",
+				"selectedIconPath": "static/index.png"
+			},
+			{
+				"pagePath": "pages/my/index",
+				"text": "My",
+				"iconPath": "static/index_change.png",
+				"selectedIconPath": "static/index.png"
+			}
+		]
+	}
+}

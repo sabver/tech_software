@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-688 -603 60 60">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #d9d9d9;
+        opacity: 0.801;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="play_btn" transform="translate(-851 -645)">
+    <circle id="楕円形_7" data-name="楕円形 7" class="cls-1" cx="30" cy="30" r="30" transform="translate(163 42)"/>
+    <path id="パス_46" data-name="パス 46" class="cls-2" d="M1.322,0H20.708a1.322,1.322,0,0,1,1.322,1.322V20.708a1.322,1.322,0,0,1-1.322,1.322L0,1.322A1.322,1.322,0,0,1,1.322,0Z" transform="translate(188 56.716) rotate(45)"/>
+  </g>
+</svg>

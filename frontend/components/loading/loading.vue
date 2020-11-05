@@ -1,0 +1,254 @@
+<template>
+	<view class='c-loading' :class='[isLoading?"":"c-loading--hidden"]'>
+		<view class='c-loading__warp text-center'>
+			<view class='c-loading__main'>
+				<view class="sk-fading-circle">
+					<view class="sk-circle sk-circle-1"></view>
+					<view class="sk-circle sk-circle-2"></view>
+					<view class="sk-circle sk-circle-3"></view>
+					<view class="sk-circle sk-circle-4"></view>
+					<view class="sk-circle sk-circle-5"></view>
+					<view class="sk-circle sk-circle-6"></view>
+					<view class="sk-circle sk-circle-7"></view>
+					<view class="sk-circle sk-circle-8"></view>
+					<view class="sk-circle sk-circle-9"></view>
+					<view class="sk-circle sk-circle-10"></view>
+					<view class="sk-circle sk-circle-11"></view>
+					<view class="sk-circle sk-circle-12"></view>
+				</view>
+			</view>
+			<view class='c-loading__text'>
+				<text>{{text}}</text>
+			</view>
+		</view>
+	</view>
+</template>
+
+<script>
+	export default {
+		/**
+		 * 组件的属性列表
+		 */
+		props: {
+			text: {
+				type: String,
+				default: () => {
+					return 'loading...'
+				}
+			},
+			isLoading: {
+				type: Boolean,
+				default: () => {
+					return true
+				}
+			}
+		},
+	}
+</script>
+
+<style>
+
+	/*加载动画*/
+
+	.c-loading {
+		/* display: inline-block; */
+		box-sizing: border-box;
+		/* height: 52rpx;
+  padding: 15rpx; */
+		text-align: center;
+	}
+
+	.c-loading--hidden {
+		display: none;
+	}
+
+	.c-loading__warp {
+		position: relative;
+		/* width: 200rpx; */
+		margin: 0 auto;
+		display: inline-block;
+	}
+
+	.c-loading__main {
+		display: inline-block;
+		/* padding-top: 6rpx; */
+		position: absolute;
+		right: 100%;
+		top: 6rpx;
+	}
+
+	.c-loading__text {
+		display: inline-block;
+		padding-left: 16rpx;
+	}
+
+	.c-loading__text text {
+		color: #bdbcbc;
+		font-size: 26rpx;
+		display: inline-block;
+	}
+
+	.sk-fading-circle {
+		width: 30rpx;
+		height: 30rpx;
+		position: relative;
+		margin: auto;
+	}
+
+	.sk-fading-circle .sk-circle {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+
+	.sk-fading-circle .sk-circle:before {
+		content: '';
+		display: block;
+		margin: 0 auto;
+		width: 15%;
+		height: 15%;
+		background-color: #bdbcbc;
+		-webkit-border-radius: 100%;
+		border-radius: 100%;
+		-webkit-animation: sk-fading-circle-delay 1.2s infinite ease-in-out both;
+		animation: sk-fading-circle-delay 1.2s infinite ease-in-out both;
+	}
+
+	.sk-fading-circle .sk-circle-2 {
+		-webkit-transform: rotate(30deg);
+		transform: rotate(30deg);
+	}
+
+	.sk-fading-circle .sk-circle-3 {
+		-webkit-transform: rotate(60deg);
+		transform: rotate(60deg);
+	}
+
+	.sk-fading-circle .sk-circle-4 {
+		-webkit-transform: rotate(90deg);
+		transform: rotate(90deg);
+	}
+
+	.sk-fading-circle .sk-circle-5 {
+		-webkit-transform: rotate(120deg);
+		transform: rotate(120deg);
+	}
+
+	.sk-fading-circle .sk-circle-6 {
+		-webkit-transform: rotate(150deg);
+		transform: rotate(150deg);
+	}
+
+	.sk-fading-circle .sk-circle-7 {
+		-webkit-transform: rotate(180deg);
+		transform: rotate(180deg);
+	}
+
+	.sk-fading-circle .sk-circle-8 {
+		-webkit-transform: rotate(210deg);
+		transform: rotate(210deg);
+	}
+
+	.sk-fading-circle .sk-circle-9 {
+		-webkit-transform: rotate(240deg);
+		transform: rotate(240deg);
+	}
+
+	.sk-fading-circle .sk-circle-10 {
+		-webkit-transform: rotate(270deg);
+		transform: rotate(270deg);
+	}
+
+	.sk-fading-circle .sk-circle-11 {
+		-webkit-transform: rotate(300deg);
+		transform: rotate(300deg);
+	}
+
+	.sk-fading-circle .sk-circle-12 {
+		-webkit-transform: rotate(330deg);
+		transform: rotate(330deg);
+	}
+
+	.sk-fading-circle .sk-circle-2:before {
+		-webkit-animation-delay: -1.1s;
+		animation-delay: -1.1s;
+	}
+
+	.sk-fading-circle .sk-circle-3:before {
+		-webkit-animation-delay: -1s;
+		animation-delay: -1s;
+	}
+
+	.sk-fading-circle .sk-circle-4:before {
+		-webkit-animation-delay: -0.9s;
+		animation-delay: -0.9s;
+	}
+
+	.sk-fading-circle .sk-circle-5:before {
+		-webkit-animation-delay: -0.8s;
+		animation-delay: -0.8s;
+	}
+
+	.sk-fading-circle .sk-circle-6:before {
+		-webkit-animation-delay: -0.7s;
+		animation-delay: -0.7s;
+	}
+
+	.sk-fading-circle .sk-circle-7:before {
+		-webkit-animation-delay: -0.6s;
+		animation-delay: -0.6s;
+	}
+
+	.sk-fading-circle .sk-circle-8:before {
+		-webkit-animation-delay: -0.5s;
+		animation-delay: -0.5s;
+	}
+
+	.sk-fading-circle .sk-circle-9:before {
+		-webkit-animation-delay: -0.4s;
+		animation-delay: -0.4s;
+	}
+
+	.sk-fading-circle .sk-circle-10:before {
+		-webkit-animation-delay: -0.3s;
+		animation-delay: -0.3s;
+	}
+
+	.sk-fading-circle .sk-circle-11:before {
+		-webkit-animation-delay: -0.2s;
+		animation-delay: -0.2s;
+	}
+
+	.sk-fading-circle .sk-circle-12:before {
+		-webkit-animation-delay: -0.1s;
+		animation-delay: -0.1s;
+	}
+
+	@-webkit-keyframes sk-fading-circle-delay {
+
+		0%,
+		39%,
+		100% {
+			opacity: 0;
+		}
+
+		40% {
+			opacity: 1;
+		}
+	}
+
+	@keyframes sk-fading-circle-delay {
+
+		0%,
+		39%,
+		100% {
+			opacity: 0;
+		}
+
+		40% {
+			opacity: 1;
+		}
+	}
+</style>
